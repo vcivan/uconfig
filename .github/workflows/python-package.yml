@@ -37,7 +37,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Set environment variables
       run:
-        echo "PYTHONPATH=/home/runner/work/uconfig/src" >> "$GITHUB_ENV"
+        echo "PYTHONPATH=/home/runner/work/uconfig/uconfig/src" >> "$GITHUB_ENV"
     - name: Test with pytest
       run: |
         pytest
